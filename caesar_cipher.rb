@@ -14,11 +14,16 @@ shift_amount %= 26 if shift_amount > 26
 i = 0
 until i >= string.length
   current_number = string[i].ord
-  current_number += shift_amount
-  # puts current_number
+  if current_number >= 65 && current_number <= 90
+    current_number += shift_amount
+    current_number -= 26 if current_number > 90
+  end
+  if current_number >= 97 && current_number <= 122
+    current_number += shift_amount
+    current_number -= 26 if current_number > 122
+  end
   string[i] = current_number.chr
   i += 1
-  # puts string
 end
 # Print the new string
 puts string
