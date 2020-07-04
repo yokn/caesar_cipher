@@ -7,7 +7,7 @@ string = gets.chomp
 puts 'Please enter the shift amount'
 shift_amount = gets.chomp.to_i
 # If the shift_amount is greater than 26 set shift_amount to %=26
-shift_amount %= 26 if shift_amount > 26
+shift_amount %= 26 if shift_amount.abs > 26
 # Until the end of the string is reached:
 #   Read the next_char of the string
 #   Convert it to charcode
