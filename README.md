@@ -3,3 +3,4 @@
 - Works with shift_amount larger than 26
 - Wraps Z to A
 - Keeps the same case
+- Can shift backwards
