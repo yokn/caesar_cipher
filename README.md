@@ -1,0 +1,5 @@
+- Works with both lowercase and uppercase characters
+- Ignores other characters
+- Works with shift_amount larger than 26
+- Wraps Z to A
+- Keeps the same case
