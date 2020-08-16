@@ -25,8 +25,5 @@ def caesar_cipher(string, shift_amount)
     i += 1
   end
   # Print the new string
-  puts 'Your encoded string is:'
-  puts string
+  string
 end
-
-caesar_cipher('What a string!', 5)
